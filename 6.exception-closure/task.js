@@ -24,12 +24,12 @@ class Triangle {
 		}
 	}
 
-	getPerimeter() {
+	get perimeter() {
 		return this.a + this.b + this.c;
 	}
 
-	getArea() {
-		const p = this.getPerimeter() / 2; // полупериметр треугольника
+	get area() {
+		const p = this.perimeter / 2; // полупериметр треугольника
 		return Number(Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c)).toFixed(3));
 	}
 }
