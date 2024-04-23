@@ -46,7 +46,3 @@
 	  }
 	}
   }
-  
-  const triangle = getTriangle(1,3,100);
-  console.log(triangle.perimeter);
-  console.log(triangle.area);
