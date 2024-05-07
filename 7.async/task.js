@@ -23,8 +23,7 @@ class AlarmClock {
     }
   
     getCurrentFormattedTime() {
-      let date = new Date();
-      return `${date.getHours()}:${date.getMinutes()}`;
+        return new Date().toLocaleTimeString().slice(0, -3);
     }
   
     start() {
